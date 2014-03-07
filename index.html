@@ -7,6 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href='//fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+        <link href="//fonts.googleapis.com/css?family=Montserrat+Alternates:400,700" rel="stylesheet" type="text/css">
+
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -19,7 +22,7 @@
         <div class="bs-docs-header" id="content">
           <div class="container">
             <h1>MIDI Bot</h1>
-            <p>Helping to convert MIDI program numbers for various devices so your brain doesn't need to hurt.</p>
+            <p>Converting MIDI program numbers for various devices so your brain doesn't hurt.</p>
           </div>
         </div>
 
@@ -31,6 +34,15 @@
                         <input type="text" class="form-control" id="midi-program-number" placeholder="123">
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label for="note-name" class="col-sm-2 control-label">Note Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="note-name" placeholder="C3">
+                    </div>
+                </div>
+
+                <h3>DAWs</h3>
 
                 <div class="form-group">
                     <label for="logic-program-number" class="col-sm-2 control-label">Logic Program Number</label>
@@ -46,10 +58,65 @@
                     </div>
                 </div>
 
+
+
+                <h3>Synths</h3>
+
                 <div class="form-group">
-                    <label for="note-name" class="col-sm-2 control-label">Note Name</label>
+                    <label for="moog-preset" class="col-sm-2 control-label">Moog Preset</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="note-name" placeholder="C3">
+                        <input type="text" class="form-control" id="moog-preset" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prophet-preset" class="col-sm-2 control-label">Prophet Preset</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="prophet-preset" placeholder="123">
+                    </div>
+                </div>
+
+                <h3>Pedals</h3>
+
+                <div class="form-group">
+                    <label for="timeline-bank" class="col-sm-2 control-label">Timeline Bank</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="timeline-bank" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="big-sky-bank" class="col-sm-2 control-label">BigSky Bank</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="big-sky-bank" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="space-preset" class="col-sm-2 control-label">Space Preset</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="space-preset" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="h9-preset" class="col-sm-2 control-label">H9 Preset</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="h9-preset" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="pitch-factor-bank" class="col-sm-2 control-label">PitchFactor Bank</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="pitch-factor-bank" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="voice-live-preset" class="col-sm-2 control-label">VoiceLive Preset</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="voice-live-preset" placeholder="123">
                     </div>
                 </div>
             </form>
@@ -57,6 +124,8 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="js/note-name-conversion.js"></script>
+        <script src="js/strymon-conversion.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
